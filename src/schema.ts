@@ -1,10 +1,9 @@
-import { makeSchema } from 'nexus'
-import { join } from 'path'
+import { makeSchema } from 'nexus';
+import { join } from 'path';
+import * as types from "./graphql";
 
 export const schema = makeSchema({
-//Our GraphQL schema will consist of many types that we will pass as an
-//array to the types object.
-  types: [],
+  types,
   outputs: {
     //The first output file that Nexus will generate for you is a GraphQL schema file of type .graphql.
     //This is the GraphQL Schema Definition Language (SDL) for defining the structure of your API. 
